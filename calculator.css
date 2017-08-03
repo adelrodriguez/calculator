@@ -1,0 +1,113 @@
+html {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	width: 400px;
+	height: 533px;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+	border-radius: 5px;
+
+	-webkit-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.25);
+       -moz-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.25);
+			box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.25);
+}
+
+.display {
+	position: relative;
+	height: 30%;
+
+}
+
+.display .log {
+	height: 33.3%;
+	overflow: hidden;
+	font-size: 1rem;
+
+	background: #1e90ff;
+}
+
+.display .log span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+
+	color: white;
+}
+
+.display .result {
+	height: 66.6%;
+	font-size: 3.25rem;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.display .result span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+}
+
+.buttons {
+	height: 70%;
+
+}
+
+.buttons .row {
+	height: 20%;
+	text-align: center;
+}
+
+
+button {
+	height: 100%;
+	width: 24.25%;
+
+	color: grey;
+	background: white;
+	border: none;
+
+	font-size: 1.75rem;
+}
+
+.operator, .equals {
+	background: #1e90ff;
+	color: white;
+}
+
+.backspace, .clear-entry, .all-clear, .row:first-child {
+	background: #969696;
+	color: white;
+}
+
+button:active {
+	-webkit-box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.15);
+       -moz-box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.15);
+			box-shadow: inset 0px 0px 10px 3px rgba(0,0,0,0.15);
+
+	font-weight: bold;
+
+	background: #ededed;
+}
+
+.backspace:active, .clear-entry:active, .all-clear:active {
+	background: #747474;
+}
+
+.operator:active, .equals:active {
+	background: #1271d1;
+}
+
+button:focus {
+	outline: 0;
+}
